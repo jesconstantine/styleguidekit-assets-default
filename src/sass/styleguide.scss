@@ -63,21 +63,79 @@ $sg-font : "HelveticaNeue", "Helvetica", "Arial", sans-serif;
 // Colors
 $sg-black : #000;
 $sg-white : #fff;
-$sg-gray-light : #eee;
-$sg-gray-light-2 : #ddd;
+$sg-gray-light : #e8e9ee;
+$sg-gray-light-2 : #d8d8d8;
 $sg-gray-light-3 : #ccc;
-$sg-gray-light-4 : #999;
-$sg-gray : #808080;
-$sg-gray-dark : #222;
+$sg-gray-light-4 : #999898;
+$sg-gray : #666;
+$sg-gray-dark : #111;
 $sg-tint : rgba(255,255,255,0.05);
 $sg-tint-2 : rgba(255,255,255,0.25);
 $sg-tone : rgba(0,0,0,0.1);
 $sg-tone-2 : rgba(0,0,0,0.3);
 
+///////////////////////////////////////////
+// Palantir Specific Colors
+///////////////////////////////////////////
+
+// Palantir Green
+$primary: #9fc855;
+$primary-dark: #7DA12F; // Dark is compliant at AA, large text
+$primary-xdark: #5E7B21; // Extra Dark is compliant at AA normal text
+
+// Palantir Teal
+$secondary: #11a9a1;
+$secondary-dark: #109C95; // Dark is compliant at AA, large text
+$secondary-xdark: #0D827C; // Extra Dark is compliant at AA normal text
+$secondary-light: #20E1D6;
+
+// Palantir Orange
+$tertiary: #fb6500; // Regular is compliant at AA, large text
+$tertiary-dark: #C94C0D; // Dark is compliant at AA normal text
+$tertiary-xdark: #973C00; // Extra Dark is compliant at AAA normal text
+
+// Palantir Gray
+$quaternary: #7e97a0; // Regular is compliant at AA, large text
+$quaternary-dark: #627984; // Dark is compliant at AA normal text
+$quaternary-xdark: #4c5b67; // Extra Dark is compliant at AAA normal text
+$quaternary-xxdark: #1A262F;
+$quaternary-light: #E1E9EF;
+
 // Typography
-$sg-font-size-sm : 70%;
-$sg-font-size-norm : 100%;
-$sg-font-size-large : 120%;
+$base-font-size: 16px; // The font size set on the root html element.
+$base-line-height: 24px; // This line-height determines the basic unit of vertical rhythm.
+
+// Modular Scale
+// Major Third: 16px @ 1:1.25
+$xl-display: 5 * $base-font-size;
+$lg-display: 3.75 * $base-font-size;
+$md-display: 3.5 * $base-font-size;
+$sm-display: 2.9 * $base-font-size;
+$xxl-heading: 2.44 * $base-font-size;
+$xl-heading: 2 * $base-font-size;
+$lg-heading: 1.85 * $base-font-size;
+$md-heading: 1.65 * $base-font-size;
+$ms-heading: 1.5 * $base-font-size;
+$sm-heading: 1.25 * $base-font-size;
+$xs-heading: 1.15 * $base-font-size;
+$text: 1 * $base-font-size;
+$sm-text: .9 * $base-font-size;
+$label: .75 * $base-font-size;
+$xs-text: .7 * $base-font-size;
+$crumb: .6 * $base-font-size;
+
+$h1-font-size: $md-display;
+$h2-font-size-small: $xxl-heading;
+$h2-font-size: $sm-display;
+$h3-font-size: $md-heading;
+$h4-font-size: $sm-heading;
+$h5-font-size: $text;
+$h6-font-size: $label;
+
+// Pattern Lab font variables
+$sg-font-size-sm : $xs-text;
+$sg-font-size-norm : $text;
+$sg-font-size-large : $sm-heading;
 
 // Spacing & Padding
 $sg-space : 1em;
@@ -170,7 +228,7 @@ $sg-border-radius-med : 6px;
 * and tools.
 */
 .sg-header {
-    background: $sg-black;
+    background: $quaternary-xxdark;
     color: $sg-white;
     font-family: $sg-font;
     text-transform: uppercase;
@@ -713,21 +771,21 @@ $sg-border-radius-med : 6px;
 * In Progress state
 */
 .inprogress:before {
-    color: #FF4136 !important;
+    color: #a93511 !important;
 }
 
 /**
 * In Review state
 */
 .inreview:before {
-    color: #FFCC00 !important;
+    color: #e2bb30 !important;
 }
 
 /**
 * Complete state
 */
 .complete:before {
-    color: #2ECC40 !important;
+    color: #9fc855 !important;
 }
 
 
